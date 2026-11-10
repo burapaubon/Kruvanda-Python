@@ -1,0 +1,16 @@
+/* Presentation-only enhancements. No lesson, form, or assessment behavior changes. */
+:root{color-scheme:light;--ui-shadow:0 9px 30px rgba(14,55,110,.09);--ui-focus:#f2ad32}
+html{scroll-behavior:smooth}body{line-height:1.65;-webkit-font-smoothing:antialiased}button,a,input,select,textarea{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button{touch-action:manipulation}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--ui-focus);outline-offset:3px}
+button,.top-btn,.sideStep,.teacher-tile,.resource a,.demo-actions button,.primary,.login-btn{transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease,border-color .2s ease,filter .2s ease}
+@media(hover:hover){button:not(:disabled):hover,.top-btn:hover,.sideStep:hover,.resource a:hover,.demo-actions button:hover{filter:brightness(1.035);transform:translateY(-2px)}.teacher-tile:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(14,55,110,.15)}button:not(:disabled):active,.top-btn:active,.teacher-tile:active{transform:translateY(0) scale(.985)}}
+.panel,.resource,.summary,.teacher-tile,.login-layout,.guide section,.submission-wrap .panel,.review-wrap .panel{box-shadow:var(--ui-shadow)}
+.panel,.resource,.teacher-tile,.login-layout,.guide section{border:1px solid rgba(22,91,161,.08)}
+#steps button{transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}#steps button.selected{box-shadow:0 7px 19px rgba(19,87,165,.14)}
+.top{isolation:isolate}.top-actions,.teacher-nav,.demo-actions{row-gap:8px}.top-btn,.teacher-nav a{text-decoration:none}
+.hero h1,.panel h1,.panel h2,.teacher-tile h2,.guide h1,.guide h2{overflow-wrap:break-word;line-height:1.4}
+img{height:auto}input,select,textarea{max-width:100%;border-radius:10px}textarea{resize:vertical}pre{tab-size:4}table{max-width:100%;font-variant-numeric:tabular-nums}th,td{vertical-align:top;overflow-wrap:break-word}
+#content,.guide section,.submission-wrap,.teacher-home,.login-card{min-width:0}#content *,.guide section *{min-width:0}a,button{overflow-wrap:break-word}
+#resources[hidden],#reviewPanel[hidden],[hidden]{display:none!important}
+@media(max-width:760px){.top{position:relative}.top-actions{justify-content:flex-start}.top-btn{min-height:40px}.hero{gap:12px}.panel,.resource{border-radius:16px}.summary{gap:12px}.teacher-grid{gap:12px}.guide{padding-inline:12px}.guide section{padding:clamp(14px,3.5vw,22px)}footer{gap:10px;flex-wrap:wrap}footer button{flex:1 1 130px}#steps button{min-height:90px}}
+@media(max-width:480px){body{font-size:14px}.top{gap:9px}.top-actions{width:100%}.brand{font-size:clamp(14px,4vw,18px)}.hero h1{font-size:clamp(21px,6vw,28px)}.panel h2{font-size:clamp(17px,5vw,21px)}.hero,.summary{border-radius:15px}.row>*{max-width:100%}.login-layout{border-radius:20px}.login-side{padding:22px 18px}.demo-actions button{flex:1 1 100%}#steps{gap:7px}#steps button{padding:10px 7px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

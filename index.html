@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b3570">
+  <meta name="description" content="ห้องเรียนออนไลน์ครูแวนด้า รายวิชาการเขียนโปรแกรมภาษา Python">
+  <title>เข้าสู่ระบบ | KruVanda Python Classroom</title>
+  <link rel="stylesheet" href="auth/login.css">
+  <link rel="stylesheet" href="auth/login-finish.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <main class="login-layout">
+    <section class="intro" aria-labelledby="brand-title">
+      <div class="intro-pattern" aria-hidden="true"></div>
+      <div class="intro-content">
+        <div class="eyebrow"><span class="live-dot" aria-hidden="true"></span>KruVanda Classroom <span class="eyebrow-sep">/</span> Python Programming</div>
+        <div class="logo"><div class="logo-inner"><img src="assets/python-brand.svg" alt="สัญลักษณ์ภาษา Python"></div></div>
+        <div class="subject-chip"><span class="chip-symbol" aria-hidden="true">&lt;/&gt;</span> LEARN · CODE · CREATE</div>
+        <h1 id="brand-title">ห้องเรียนออนไลน์<br><span>ครูแวนด้า</span></h1>
+        <p class="intro-description">รายวิชาการเขียนโปรแกรมภาษาคอมพิวเตอร์<br>เรียนรู้และฝึกเขียน Python อย่างเป็นขั้นตอน</p>
+        <div class="school"><span class="school-icon" aria-hidden="true">✦</span><div>โรงเรียนเทศบาลบูรพาอุบล<small>สำนักการศึกษา เทศบาลนครอุบลราชธานี</small></div></div>
+      </div>
+      <div class="code-decoration code-top" aria-hidden="true">print("Hello, Python!")</div>
+      <div class="code-decoration code-bottom" aria-hidden="true">{ learn: true }</div>
+    </section>
+    <section class="login-side" aria-labelledby="login-heading">
+      <div class="login-card">
+        <div class="form-topline"><span class="pill"><span aria-hidden="true">✦</span> Python Classroom</span><span class="form-top-symbol" aria-hidden="true">{ }</span></div>
+        <div class="welcome-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h2 id="login-heading">ยินดีต้อนรับ<span class="accent-mark">.</span></h2>
+        <p class="muted">เข้าสู่ระบบสำหรับนักเรียนและครูผู้สอน</p>
+        <form id="loginForm">
+          <label for="username">ชื่อผู้ใช้</label>
+          <div class="field-wrap"><span class="field-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span><input id="username" name="username" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" required placeholder="กรอกชื่อผู้ใช้"></div>
+          <label for="password">รหัสผ่าน</label>
+          <div class="field-wrap password"><span class="field-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg></span><input id="password" name="password" type="password" autocomplete="current-password" required placeholder="กรอกรหัสผ่าน"><button type="button" id="showPassword" aria-label="แสดงรหัสผ่าน" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+          <button class="primary" type="submit"><span class="button-label">เข้าสู่ระบบ</span><span class="button-arrow" aria-hidden="true">→</span></button>
+          <p id="loginMessage" role="status" aria-live="polite"></p>
+        </form>
+        <div class="login-footer"><span class="footer-line" aria-hidden="true"></span><span>ห้องเรียนออนไลน์ครูแวนด้า · KruVanda Classroom</span><span class="footer-line" aria-hidden="true"></span></div>
+      </div>
+    </section>
+  </main>
+  <script src="auth/config.js"></script>
+  <script src="auth/session.js"></script>
+  <script src="auth/login.js"></script>
+</body>
+</html>
